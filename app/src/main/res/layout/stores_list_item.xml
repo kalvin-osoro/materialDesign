@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/store_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/css_grey"
+            android:paddingBottom="10dp"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/store_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/galleria"
+            android:textColor="@color/yellow"
+            android:layout_alignBottom="@id/store_image"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+        <TextView
+            android:id="@+id/store_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_daily_from_7_00_a_m"
+            android:textColor="?android:textColorSecondary"
+            android:layout_below="@id/store_title"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_baseline_access_alarm_24"
+            android:drawableLeft="@drawable/ic_baseline_access_alarm_24"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+        <TextView
+            android:id="@+id/store_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/galleria_description"
+            android:textColor="@color/navy_blue"
+            android:layout_below="@id/store_open"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_marginTop="3dp"
+            android:textStyle="italic"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <!--Add an Horizontal line-->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/store_description"
+            android:background="@color/gold"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.5"
+            android:isIndicator="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/divider"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
