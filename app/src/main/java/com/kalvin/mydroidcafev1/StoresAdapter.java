@@ -36,12 +36,18 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull StoresAdapter.ViewHolder holder, int position) {
-
+        //step 5 Get the current view object using its position and populate it with data
+        Store currentStore = storeData.get(position);
+        //step 5.1 populate the current view with data
+        holder.bindTo(currentStore);
     }
+
 
     @Override
     public int getItemCount() {
-        return 0;
+        //Step 4.0
+        return storeData.size();
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

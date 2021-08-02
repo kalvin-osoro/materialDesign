@@ -87,26 +87,7 @@ public class StoresFragment extends Fragment {
         //8. Get data
         initializeData();
         //9. Implement swipping and moving of card items
-        ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(ItemTouchHelper.RIGHT|ItemTouchHelper.LEFT|ItemTouchHelper.DOWN|ItemTouchHelper.UP,ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT) {
 
-
-            @Override
-            public boolean onMove(@NonNull @NotNull RecyclerView recyclerView, @NonNull @NotNull RecyclerView.ViewHolder viewHolder, @NonNull @NotNull RecyclerView.ViewHolder target) {
-                int from = viewHolder.getAdapterPosition();
-                int to = viewHolder.getAdapterPosition();
-                Collections.swap(storeData,from,to);
-                storeAdapter.notifyItemMoved(from,to);
-
-                return true;
-            }
-
-            @Override
-            public void onSwiped(@NonNull @NotNull RecyclerView.ViewHolder viewHolder, int direction) {
-                storeData.remove(viewHolder.getAdapterPosition());
-                storeAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
-            }
-        });
-        helper.attachToRecyclerView(storeRecyclerView);
 
         return rootView;
 

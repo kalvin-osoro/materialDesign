@@ -64,7 +64,7 @@ public class PastriesRecipeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //step 1.0 Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_dessert_recipe, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_pastries_recipe, container, false);
         //3. Initialize the recycler view
         pastriesRecyclerView = rootView.findViewById(R.id.recycler_dessert);
         //4. set a layout for the recycler view

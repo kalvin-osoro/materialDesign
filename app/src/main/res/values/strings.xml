@@ -14,7 +14,7 @@
     <string name="prep_amp_cook_time_2hrs"><![CDATA[Prep & Cook Time: 2hrs]]></string>
     <string name="recipe_short_description">Recipe short description</string>
     <string name="how_to_prepare_donuts">How to prepare donuts</string>
-    <string name="pastries_recipe">pastries_recipe</string>
+    <string name="pastries_recipes">pastries_recipes</string>
     <string name="how_to_prepare_froyo">How to prepare Froyo</string>
     <string name="how_to_prepare_ice_cream_sandwich">How to prepare ice cream sandwich</string>
     <string name="galleria_description">Enjoy the outside seating a Galleria, conveniently in the center of the mall to enjoy a coffee after shopping, family meal or evening cocktail. Read more...</string>
@@ -22,6 +22,13 @@
     <string name="galleria">Galleria</string>
     <string name="rate_our_stores">Rate our stores</string>
     <string name="droid_caffe_stores">Droid Caffe Stores</string>
+    <string name="pizzas">Pizzas</string>
+    <string name="pasta">pasta</string>
+    <string name="cocktails">Cocktails</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <array name="desserts_images">
         <item>@drawable/donut</item>
