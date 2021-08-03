@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -60,39 +61,29 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
         private TextView myStoreTitle;
         private TextView myStoreOpen;
         private TextView myStoreDescription;
+
+        private  ImageButton shareApp;
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
             myStoreImage = itemView.findViewById(R.id.store_image);
             myStoreTitle = itemView.findViewById(R.id.store_title);
             myStoreOpen = itemView.findViewById(R.id.store_open);
             myStoreDescription = itemView.findViewById(R.id.store_description);
-//            itemView.setOnClickListener(new View.OnClickListener() {
+
+
+//            shareApp.setOnClickListener(new View.OnClickListener() {
 //                @Override
-//                public void onClick(View v) {
-//                    int dessertPosition = getAdapterPosition();
-//                    Recipe currentDessert = storeData.get(dessertPosition);
-//                    if (dessertPosition == 0 || dessertPosition == 3 || dessertPosition == 6){
-//                        Intent donutIntent = new Intent(myContext,DonutActivity.class);
-//                        donutIntent.putExtra("dTitle",currentDessert.getRecipeTitle());
-//                        donutIntent.putExtra("dImage",currentDessert.getRecipeImage());
-//                        donutIntent.putExtra("dDescription",currentDessert.getRecipeDescription());
-//                        myContext.startActivity(donutIntent);
-//                    }else if(dessertPosition ==1 || dessertPosition == 4 || dessertPosition == 7){
-//                        Intent froyoIntent = new Intent(myContext,FroyoActivity.class);
-//                        froyoIntent.putExtra("fTitle",currentDessert.getRecipeTitle());
-//                        froyoIntent.putExtra("fImage",currentDessert.getRecipeImage());
-//                        froyoIntent.putExtra("fDescription",currentDessert.getRecipeDescription());
-//                        myContext.startActivity(froyoIntent);
-//                    }else if(dessertPosition == 2 || dessertPosition == 5 || dessertPosition == 8){
-//                        Intent sandwichIntent = new Intent(myContext,SandwichActivity.class);
-//                        sandwichIntent.putExtra("sTitle",currentDessert.getRecipeTitle());
-//                        sandwichIntent.putExtra("sImage",currentDessert.getRecipeImage());
-//                        sandwichIntent.putExtra("sDescription",currentDessert.getRecipeDescription());
-//                        myContext.startActivity(sandwichIntent);
-//
+//                public void onClick(View view) {
+//                    Intent shareIntent = new Intent(Intent.ACTION_SEND);
+//                    shareIntent.setType("text/plain");
+//                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out this developer " );
+//                    Intent chooser = Intent.createChooser(shareIntent, "Share via");
+//                    if (shareIntent.resolveActivity(getPackageManager()) != null){
+//                        startActivity(chooser);
 //                    }
 //                }
 //            });
+
         }
         /*
         step 6 create a method to bind the current view with date(Image, title, ddescription)
@@ -107,6 +98,9 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
             myStoreTitle.setText(currentStore.getStoreTitle());
             myStoreDescription.setText(currentStore.getStoreDescription());
 
+
+
         }
+
     }
 }

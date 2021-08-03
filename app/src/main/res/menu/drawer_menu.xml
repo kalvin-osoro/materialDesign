@@ -5,29 +5,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_message"
-            android:icon="@drawable/ic_message"
-            android:title="Message" />
+            android:id="@+id/nav_pizza"
+            android:icon="@drawable/ic__pizza"
+            android:title="@string/pizzas" />
         <item
-            android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_chat"
-            android:title="Chat" />
+            android:id="@+id/nav_cocktail"
+            android:icon="@drawable/ic_cocktail"
+            android:title="@string/cocktails" />
         <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_profile"
-            android:title="Profile" />
+            android:id="@+id/nav_fastfood"
+            android:icon="@drawable/ic_fastfood"
+            android:title="@string/fastfood" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_send"
-                android:title="Share" />
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact_phone"
+                android:title="@string/contact_us" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_send"
-                android:title="Send" />
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info"
+                android:title="@string/about_us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share_app" />
         </menu>
     </item>
 

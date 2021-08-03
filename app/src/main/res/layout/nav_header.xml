@@ -3,34 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/galleria_shopping_mall_kenya_1"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tool_bar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/nav_name"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        app:logo="@mipmap/ic_my_app_logo"
-        app:titleTextAppearance="@style/app_title"
-        app:title="@string/app_name"
-        android:background="@color/dark_toolbar"
-        android:minHeight="?android:attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:text="Kalvin Oanda"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/nav_email"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tool_bar"
-        android:background="@color/bright_tab"
-        android:minHeight="?android:attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tab_layout"/>
+        android:text="kalvin.oanda@strathmore.edu"
+        android:textColor="@color/purple_500"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/nav_name"
+        android:layout_marginLeft="50dp" />
 </RelativeLayout>

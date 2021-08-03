@@ -29,6 +29,10 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="fastfood">Fastfood</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="share_app">Share App with</string>
 
     <array name="desserts_images">
         <item>@drawable/donut</item>
@@ -53,6 +57,10 @@
         <item>Froyo</item>
         <item>Ice Cream Sandwich</item>
     </string-array>
+    <string name="about_text">Droid cafe is a simple app displaying stores and menu items offered in those stores.
+        It implements material design.
+    </string>
+    <string name="ok">OK</string>
 
     <string-array name="dessert_description">
         <item>Donuts are glazed and sprinkled with candy</item>
@@ -125,7 +133,7 @@
     </string-array>
 
     <string-array name="store_description">
-        <item>Slice of chocolate flavoured cake</item>
+        <item>Enjoy the outside seating a Galleria, conveniently in the center of the mall to enjoy a coffee after shopping, family meal or evening cocktail. Read more...</item>
         <item>Yummy samosa with source</item>
 <!--        <item>sweet bread</item>-->
 <!--        <item>Slice of chocolate flavoured cake</item>-->
