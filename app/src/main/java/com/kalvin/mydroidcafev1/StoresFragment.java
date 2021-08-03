@@ -96,12 +96,13 @@ public class StoresFragment extends Fragment {
         //8.1 Get the data you created in the resource file strings.xml
         String[] storeTitles = getResources().getStringArray(R.array.store_title);
         String[] storeDescription = getResources().getStringArray(R.array.store_description);
+        String[] storeLink=getResources().getStringArray(R.array.store_links);
         TypedArray storeImages = getResources().obtainTypedArray(R.array.store_images);
         //8.2 clear existing data to avoid duplications
         storeData.clear();
         //8.3 Create an arraylist of dessert Recipes with title, description and images
         for (int i=0; i<storeTitles.length; i++){
-            storeData.add(new Store(storeImages.getResourceId(i,0),storeTitles[i],storeDescription[i]));
+            storeData.add(new Store(storeImages.getResourceId(i,0),storeTitles[i],storeDescription[i],storeLink[i]));
 
         }
         //8.4 clean up the data in the typed array

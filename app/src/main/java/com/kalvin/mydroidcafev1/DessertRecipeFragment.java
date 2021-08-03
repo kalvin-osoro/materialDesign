@@ -117,6 +117,7 @@ public class DessertRecipeFragment extends Fragment {
         String[] dessertTitles = getResources().getStringArray(R.array.dessert_title);
         String[] dessertDescription = getResources().getStringArray(R.array.dessert_description);
         TypedArray dessertImages = getResources().obtainTypedArray(R.array.desserts_images);
+
         //8.2 clear existing data to avoid duplications
         dessertRecipeData.clear();
         //8.3 Create an arraylist of dessert Recipes with title, description and images

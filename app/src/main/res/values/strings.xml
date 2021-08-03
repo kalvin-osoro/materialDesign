@@ -116,7 +116,7 @@
     <!--resources for stores-->
     <array name="store_images">
         <item>@drawable/galleria_shopping_mall_kenya_1</item>
-        <item>@drawable/galleria_shopping_mall_kenya_1</item>
+        <item>@drawable/gardencity</item>
 
     </array>
 
@@ -143,5 +143,10 @@
 <!--        <item>Yummy samosa with source</item>-->
 <!--        <item>sweet bread</item>-->
     </string-array>
+
     <!--End of resources for stores-->
+    <string-array name="store_links">
+        <item>https://www.inpulseglobal.com/two-rivers-mall-kenya/</item>
+        <item>https://www.inpulseglobal.com/two-rivers-mall-kenya/</item>
+    </string-array>
 </resources>

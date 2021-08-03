@@ -2,6 +2,7 @@ package com.kalvin.mydroidcafev1;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.INotificationSideChannel;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,8 +40,19 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
     public void onBindViewHolder(@NonNull @NotNull StoresAdapter.ViewHolder holder, int position) {
         //step 5 Get the current view object using its position and populate it with data
         Store currentStore = storeData.get(position);
+        currentStore.getStoreLink();
         //step 5.1 populate the current view with data
         holder.bindTo(currentStore);
+        holder.shareApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT,"SHARE THE LINK FOR MORE DETAILS"+currentStore.getStoreLink());
+                intent.setType("text/plain");
+                myContext.startActivity(intent);
+
+            }
+        });
     }
 
 
@@ -61,6 +73,7 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
         private TextView myStoreTitle;
         private TextView myStoreOpen;
         private TextView myStoreDescription;
+        private ImageButton myStorebtn;
 
         private  ImageButton shareApp;
         public ViewHolder(@NonNull @NotNull View itemView) {
@@ -69,6 +82,7 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
             myStoreTitle = itemView.findViewById(R.id.store_title);
             myStoreOpen = itemView.findViewById(R.id.store_open);
             myStoreDescription = itemView.findViewById(R.id.store_description);
+            shareApp=itemView.findViewById(R.id.nav_share);
 
 
 //            shareApp.setOnClickListener(new View.OnClickListener() {
@@ -97,6 +111,8 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
             Glide.with(myContext).load(currentStore.getStoreImage()).into(myStoreImage);
             myStoreTitle.setText(currentStore.getStoreTitle());
             myStoreDescription.setText(currentStore.getStoreDescription());
+
+
 
 
 

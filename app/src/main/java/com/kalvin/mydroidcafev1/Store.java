@@ -5,25 +5,32 @@ public class Store {
     private final int storeImage;
     private String storeTitle;
     private String storeDescription;
+    private String storeLink;
     /*
     create a constructor for thr recipe data model
     pass the parameter recipeImage, recipeTitle and recipeDescription
      */
-    Store(int storeImage,String storeTitle,String storeDescription){
+
+    public Store(int storeImage, String storeTitle, String storeDescription, String storeLink) {
         this.storeImage = storeImage;
         this.storeTitle = storeTitle;
         this.storeDescription = storeDescription;
+        this.storeLink = storeLink;
     }
-    /*
-    create the getters and return the specific object
-     */
-    public int getStoreImage(){
+
+    public int getStoreImage() {
         return storeImage;
     }
-    public String getStoreTitle(){
+
+    public String getStoreTitle() {
         return storeTitle;
     }
-    public String getStoreDescription(){
+
+    public String getStoreDescription() {
         return storeDescription;
+    }
+
+    public String getStoreLink() {
+        return storeLink;
     }
 }
