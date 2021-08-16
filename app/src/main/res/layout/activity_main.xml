@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            app:logo="@mipmap/ic_chicken"
+            app:logo="@mipmap/ic_my_app_logo"
             app:titleTextAppearance="@style/app_title"
             app:title="@string/app_name"
             android:background="@color/dark_toolbar"
@@ -31,7 +31,7 @@
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tool_bar"
+            android:layout_below="@+id/toolbar"
             android:background="@color/bright_tab"
             android:minHeight="?android:attr/actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
